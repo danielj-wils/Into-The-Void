@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
 
     bool inactive = false;
 
+    public float shakeStrength = 0.03f;
+    public float shakeDuration = 0.2f;
+
     // Reference to the TrailRenderer component
     public TrailRenderer trail;
 
@@ -44,6 +47,7 @@ public class Enemy : MonoBehaviour
 
             if (other.CompareTag("Player") || other.CompareTag("Enemy"))
             {
+                CameraShake.Shake(shakeDuration, shakeStrength);
                 player.TakeDamage();
                 speed = 0;
                 transform.parent = player.transform;

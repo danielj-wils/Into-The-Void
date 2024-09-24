@@ -15,7 +15,7 @@ public class CameraShake : MonoBehaviour
     private void OnShake(float duration, float strength)
     {
         transform.DOShakePosition(duration, strength);
-        transform.DOShakePosition(duration, strength);
+        //transform.DOShakePosition(duration, strength);
     }
 
     public static void Shake(float duration, float strength)
