@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  shakeStrength: 0.03
+  shakeDuration: 0.2
+  trail: {fileID: 0}
 --- !u!58 &6020704693582483554
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133,9 +136,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008111844, y: -0.007852705}
+  m_Offset: {x: -0.00811182, y: 0.035612196}
   serializedVersion: 2
-  m_Radius: 1.339609
+  m_Radius: 1.1370671
 --- !u!50 &6615444420311156241
 Rigidbody2D:
   serializedVersion: 4
